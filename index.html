@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minecraft Timer Days</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h1>Minecraft Timer</h1>
+  <div id="timer">40:00</div>
+  <div class="days-input">
+    <label for="days">Número de Dias no Minecraft:</label>
+    <input type="text" id="days" pattern="[0-9]*" maxlength="2" value="2">
+  </div>
+  <div class="buttons">
+    <button id="startBtn">Iniciar</button>
+    <button id="resetBtn">Reiniciar</button>
+  </div>
+</div>
+<audio id="alertSound" src="alert.mp3" loop></audio>
+<script src="script.js"></script>
+</body>
+</html>
